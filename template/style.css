@@ -1,13 +1,16 @@
 html{
     font-size: 62.5%; /* 16px X 62.5 = 10px = 1rem */
     box-sizing: border-box;
+     
 }
 
 body{
-    margin: 0;
+     margin: 0;
+     padding: 0;
     height: 100vh;
     font-size: 1.6rem;
     font-family: Helvetica, Arial , sans-serif;
+    background-color: #e4e0dc;
 }
 
 /* Layou */
@@ -25,7 +28,7 @@ body{
 
 header{
     grid-area: header;
-    background-color: #122A73;
+    background-color: #1c3031;
 }
 
 main{
@@ -35,18 +38,27 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: #122A73;
+    background-color: #1c3031;
     color: white;
 }
 
 /* common */
+
+h1{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+h2{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
 
 a{
     text-decoration: none;
 }
 
 a:hover{
-    color: #5E9FF2;
+    color: #F24452;
 }
 
 /* header */
@@ -70,4 +82,45 @@ a.brand{
 
 .row.center{
     justify-content: center;
+}
+
+/* image*/
+
+img{
+    border-radius: 0.5rem;
+}
+
+img.medium{
+    max-width: 28rem;
+    max-height: 35rem;
+    width: 100%;
+}
+
+/* card */
+.card{
+ border: 0.1rem #c0c0c0;
+ background-color: #ffffff;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.6rem;
+}
+
+.card-body{
+  /*  padding: 1rem;*/
+}
+
+.card-body > *{
+    margin-bottom: 0.5rem;
+}
+
+.price{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Rating */
+
+.rating span{
+    color: #f0c040;
+    margin: 0.1rem;
 }
